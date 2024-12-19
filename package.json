@@ -1,0 +1,61 @@
+{
+  "author": "The Backstage Community",
+  "backstage": {
+    "pluginId": "orchestrator",
+    "pluginPackages": [
+      "@red-hat-developer-hub/backstage-plugin-orchestrator",
+      "@red-hat-developer-hub/backstage-plugin-orchestrator-backend",
+      "@red-hat-developer-hub/backstage-plugin-orchestrator-common"
+    ],
+    "role": "common-library",
+    "supported-versions": "1.32.5"
+  },
+  "bugs": "https://github.com/redhat-developer/rhdh-plugins/issues",
+  "configSchema": "config.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "config.d.ts",
+    "dist"
+  ],
+  "homepage": "https://red.ht/rhdh",
+  "keywords": [
+    "support:tech-preview",
+    "lifecycle:active",
+    "backstage",
+    "plugin",
+    "orchestrator",
+    "workflows"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    "@mlibra",
+    "@batzionb",
+    "@gciavarrini"
+  ],
+  "name": "@red-hat-developer-hub/backstage-plugin-orchestrator-common",
+  "packageManager": "yarn@3.2.3",
+  "peerDependencies": {
+    "@backstage/plugin-permission-common": "^0.8.1",
+    "@backstage/types": "^1.1.1",
+    "@severlessworkflow/sdk-typescript": "^3.0.3",
+    "axios": "^1.7.4",
+    "js-yaml": "^4.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "workspaces/orchestrator/plugins/orchestrator-common",
+    "type": "git",
+    "url": "https://github.com/redhat-developer/rhdh-plugins"
+  },
+  "sideEffects": false,
+  "version": "1.24.3"
+}
