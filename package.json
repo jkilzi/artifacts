@@ -1,0 +1,57 @@
+{
+  "author": "The Backstage Community",
+  "backstage": {
+    "pluginId": "orchestrator-swf-editor-envelope",
+    "pluginPackages": [
+      "@red-hat-developer-hub/backstage-plugin-orchestrator-swf-editor-envelope"
+    ],
+    "role": "web-library",
+    "supported-versions": "1.32.5"
+  },
+  "bugs": "https://github.com/redhat-developer/rhdh-plugins/issues",
+  "dependencies": {
+    "@kie-tools-core/editor": "^0.32.0",
+    "@kie-tools-core/keyboard-shortcuts": "^0.32.0",
+    "@kie-tools/serverless-workflow-combined-editor": "^0.32.0",
+    "@kie-tools/serverless-workflow-diagram-editor-assets": "^0.32.0",
+    "@kie-tools/serverless-workflow-diagram-editor-envelope": "^0.32.0",
+    "@kie-tools/serverless-workflow-text-editor": "^0.32.0"
+  },
+  "description": "Serverless workflow editor envelope for the Orchestrator plugin",
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://red.ht/rhdh",
+  "keywords": [
+    "support:tech-preview",
+    "lifecycle:active",
+    "backstage",
+    "plugin"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    "@mlibra",
+    "@batzionb",
+    "@gciavarrini"
+  ],
+  "name": "@red-hat-developer-hub/backstage-plugin-orchestrator-swf-editor-envelope",
+  "packageManager": "yarn@3.2.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "workspaces/orchestrator/plugins/orchestrator-swf-editor-envelope",
+    "type": "git",
+    "url": "https://github.com/redhat-developer/rhdh-plugins"
+  },
+  "sideEffects": false,
+  "version": "1.0.1",
+  "workspaces": {
+    "nohoist": [
+      "@kie-tools/**"
+    ]
+  }
+}
