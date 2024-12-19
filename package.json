@@ -1,0 +1,53 @@
+{
+  "backstage": {
+    "pluginId": "orchestrator-form",
+    "role": "web-library",
+    "supported-versions": "1.32.5"
+  },
+  "bugs": "https://github.com/redhat-developer/rhdh-plugins/issues",
+  "dependencies": {
+    "@backstage/core-components": "^0.15.1",
+    "@backstage/core-plugin-api": "^1.10.0",
+    "@backstage/types": "^1.1.1",
+    "@material-ui/core": "^4.12.4",
+    "@red-hat-developer-hub/backstage-plugin-orchestrator-form-api": "^1.4.2",
+    "@rjsf/core": "^5.21.2",
+    "@rjsf/material-ui": "^5.21.2",
+    "@rjsf/utils": "^5.21.2",
+    "@rjsf/validator-ajv8": "^5.21.2",
+    "json-schema-library": "^9.0.0",
+    "lodash": "^4.17.21"
+  },
+  "description": "Web library for the orchestrator-form plugin",
+  "exports": {
+    ".": {
+      "default": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    "@mlibra",
+    "@batzionb",
+    "@gciavarrini"
+  ],
+  "name": "@red-hat-developer-hub/backstage-plugin-orchestrator-form-react",
+  "packageManager": "yarn@3.2.3",
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "workspaces/orchestrator/plugins/orchestrator-form-react",
+    "type": "git",
+    "url": "https://github.com/redhat-developer/rhdh-plugins"
+  },
+  "sideEffects": false,
+  "version": "1.4.5"
+}
