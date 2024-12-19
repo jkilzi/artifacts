@@ -1,0 +1,45 @@
+{
+  "backstage": {
+    "role": "web-library",
+    "supported-versions": "1.32.5"
+  },
+  "bugs": "https://github.com/redhat-developer/rhdh-plugins/issues",
+  "dependencies": {
+    "@backstage/core-plugin-api": "^1.10.0",
+    "@backstage/types": "^1.1.1",
+    "@rjsf/core": "^5.21.2",
+    "@rjsf/utils": "^5.21.2"
+  },
+  "description": "library for orchestrator form api, enabling creating a factory to extend the workflow execution form",
+  "exports": {
+    ".": {
+      "default": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    "@mlibra",
+    "@batzionb",
+    "@gciavarrini"
+  ],
+  "name": "@red-hat-developer-hub/backstage-plugin-orchestrator-form-api",
+  "packageManager": "yarn@3.2.3",
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "workspaces/orchestrator/plugins/orchestrator-form-api",
+    "type": "git",
+    "url": "https://github.com/redhat-developer/rhdh-plugins"
+  },
+  "sideEffects": false,
+  "version": "1.4.2"
+}
