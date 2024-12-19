@@ -1,0 +1,88 @@
+{
+  "author": "The Backstage Community",
+  "backstage": {
+    "pluginId": "orchestrator",
+    "pluginPackages": [
+      "@red-hat-developer-hub/backstage-plugin-orchestrator",
+      "@red-hat-developer-hub/backstage-plugin-orchestrator-backend",
+      "@red-hat-developer-hub/backstage-plugin-orchestrator-common"
+    ],
+    "role": "frontend-plugin",
+    "supported-versions": "1.32.5"
+  },
+  "bugs": "https://github.com/redhat-developer/rhdh-plugins/issues",
+  "dependencies": {
+    "@backstage/core-components": "0.15.1",
+    "@backstage/core-plugin-api": "1.10.0",
+    "@backstage/errors": "1.2.4",
+    "@backstage/plugin-catalog": "1.24.0",
+    "@backstage/plugin-permission-react": "0.4.27",
+    "@kie-tools-core/editor": "^0.32.0",
+    "@kie-tools-core/notifications": "^0.32.0",
+    "@kie-tools-core/react-hooks": "^0.32.0",
+    "@kie-tools/serverless-workflow-combined-editor": "^0.32.0",
+    "@kie-tools/serverless-workflow-language-service": "^0.32.0",
+    "@kie-tools/serverless-workflow-service-catalog": "^0.32.0",
+    "@monaco-editor/react": "^4.6.0",
+    "@red-hat-developer-hub/backstage-plugin-orchestrator-common": "^1.24.3",
+    "@red-hat-developer-hub/backstage-plugin-orchestrator-form-api": "^1.4.2",
+    "@red-hat-developer-hub/backstage-plugin-orchestrator-form-react": "^1.4.5",
+    "axios": "^1.7.7",
+    "moment": "^2.29.4",
+    "monaco-editor": "^0.49.0",
+    "react-json-view": "^1.21.3",
+    "react-moment": "^1.1.3",
+    "react-use": "^17.4.0",
+    "swr": "^2.0.0",
+    "uuid": "^11.0.3",
+    "vscode-languageserver-types": "3.17.5"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "app-config.yaml",
+    "dist",
+    "dist-scalprum"
+  ],
+  "homepage": "https://red.ht/rhdh",
+  "keywords": [
+    "support:tech-preview",
+    "lifecycle:active",
+    "backstage",
+    "plugin",
+    "orchestrator",
+    "workflows"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    "@mlibra",
+    "@batzionb",
+    "@gciavarrini"
+  ],
+  "name": "@red-hat-developer-hub/backstage-plugin-orchestrator",
+  "packageManager": "yarn@3.2.3",
+  "peerDependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "@mui/icons-material": "^5.15.8",
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "workspaces/orchestrator/plugins/orchestrator",
+    "type": "git",
+    "url": "https://github.com/redhat-developer/rhdh-plugins"
+  },
+  "sideEffects": false,
+  "version": "2.4.3"
+}
