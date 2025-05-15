@@ -1,2 +1,1 @@
-# artifacts
-Common place for various artifacts
+# Red Hat Resource Optimization - Dynamic plugin

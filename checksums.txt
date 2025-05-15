@@ -1,0 +1,2 @@
+backstage-community-plugin-redhat-resource-optimization.tgz sha512-snHdLubxtdOfn4bNhaEfDcvIDjH/748qq3APxgCySlj0Veo+Nrt00Kd3JhtkrotrsLyg93I6sHUbm30LlD1tvA==
+backstage-community-plugin-redhat-resource-optimization-backend.tgz sha512-flsgcLS91owXeUWEkFFDEa+nn+vLoLQTPvo99t9g02P5TRKKNipzvseF6eQ1hZsWnlqQZK3gJwEJr4fs/NfsKw==
